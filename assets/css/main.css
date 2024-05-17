@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Nut;
+    src: url(../fonts/Minecraftia.woff);
+}
+
+* {
+    font-family: Nut;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wallpaper {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+}
+
+.pfp {
+    position: relative;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials img {
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+#social {
+    transition: all 0.4s ease-out;
+}
+
+#social:hover {
+    transform: scale(1.2);
+}
+
+#bio {
+    overflow: hidden;
+    position: relative;
+    right: 130px;
+    top: 55px;
+    text-shadow: 0 0 25px #fff;
+}
+
+#bio::after {
+    content: "";
+    display: inline-block;
+    background-color: rgb(255, 255, 255); 
+    margin-top: 0.2em; 
+    margin-left: 0.1em; 
+    animation: blink-caret 1.05s infinite;
+}
+
+@keyframes blink-caret {
+    10% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    position: relative;
+    right: 20px;
+    background: url(../img/sparkle_white.gif) no-repeat;
+    text-shadow: 0 0 25px #fff;
+}
