@@ -1,0 +1,66 @@
+@font-face {
+    font-family: meow;
+    src: url(../font/C6VM2RT4EU2NNT5XZWVYHR7WOIOGM4EU.woff2);
+}
+
+body {
+    font-family: meow;
+    background-color: rgb(48, 0, 0);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+    bottom: 20px;
+}
+
+#social {
+    transition: all 0.3s;
+}
+#social:hover {
+    transform: scale(1.3);
+}
+
+.icon img {
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.socials {
+    position: relative;
+    bottom: 5px;
+}
+
+.socials img {
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.box {
+    text-align: center;
+}
+
+#bio {
+    position: relative;
+    bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 22px;
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+#bio::after {
+    content: "";
+    display: inline-block;
+    background-color: rgb(255, 255, 255); 
+    margin-top: 0.2em; 
+    margin-left: 0.1em; 
+    animation: blink-caret 1.05s infinite;
+}
