@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/inter-tight');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+    background: url(../img/topography.svg);
+    background-color: rgb(16, 16, 17);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.socials a {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.socials {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 0 12px white;
+    margin: 10px;
+}
+
+#social {
+    transition: all 0.3s;
+}
+
+#social:hover {
+    transform: scale(1.2);
+}
+
+.bio {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .card {
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    padding: 40px;
+    transform-style: preserve-3d;
+  }
+  
+  .card .title {
+    position: relative;
+    z-index: 2;
+    transform: translateZ(20px);
+  }
+  
+  .card .credits {
+    font-size: 1.2vh;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    transform: translateZ(20px);
+  }
+  
+  .card .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
