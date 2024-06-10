@@ -1,9 +1,6 @@
 var titleText = [
     'a$gard',
     'gig',
-    'devoutK',
-    'ruinus',
-    'feelz99'
   ];
   
   function loop() {
@@ -12,7 +9,7 @@ var titleText = [
   }
   
   function loaded() {
-    setInterval(loop, 0);
+    setInterval(loop, 20);
   }
   
   var x = 0;
