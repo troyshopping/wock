@@ -1,4 +1,4 @@
-const bios = ["Front end dev", "best valorant player", "a$gard"];
+const bios = ["grave can get it :3", "a$gard", "malware enthusiast"];
 const bioContainer = document.querySelector('.bio');
 let currentBioIndex = 0;
 
