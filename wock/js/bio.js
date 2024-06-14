@@ -1,4 +1,4 @@
-const bios = ["grave can get it :3", "a$gard", "malware enthusiast"];
+const bios = ["x", "a$gard", "ihaveur.info", "/user/asgard"];
 const bioContainer = document.querySelector('.bio');
 let currentBioIndex = 0;
 
