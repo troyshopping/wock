@@ -44,11 +44,12 @@
     
     .box {
     display: flex;
-    line-height: 43px;
+    line-height: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    position: relative;
+    top: 60px;
     }
     
     pre {
