@@ -1,0 +1,68 @@
+@font-face {
+    font-family: bleh;
+    src: url(Minecraft-Regular.ttf);
+}
+
+body {
+    font-family: bleh;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#social {
+    transition: all 0.3s ease;
+}
+
+#social:hover {
+    transform: scale(1.1);
+}
+
+.ascii pre {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+#session {
+    display: none;
+}
+
+.window-body {
+    background: transparent;
+    text-align: center;
+}
+
+pre {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.window-body img{
+    text-align: center;
+    border-radius: 10%;
+}
+
+.bod {
+    text-align:center;
+    backdrop-filter: blur(10px);
+    background-color:black;
+    height:200px;
+}
+
+.wallpaper {
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url(imgs/bg.jpg);
+    height: 100vh;
+}

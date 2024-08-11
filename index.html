@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maison | wock.lol</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="i.css">
+    <meta content="^_^" property="og:title" />
+    <meta content="Maison | wock.lol" property="og:description" />
+    <meta content="https://wock.lol" property="og:url" />
+    <meta content="#00000" data-react-helmet="true" name="theme-color" />
+    <link rel="Icon" href="https://files.catbox.moe/f2ngt0.png">
+</head>
+<body class="wallpaper" >
+    <div class="container">
+        <div class="box">
+
+            <div class="ascii">
+                <pre>
+                        $$\                                  
+                    \__|                              
+$$$$$$\$$$$\   $$$$$$\  $$\  $$$$$$$\  $$$$$$\  $$$$$$$\  
+$$  _$$  _$$\  \____$$\ $$ |$$  _____|$$  __$$\ $$  __$$\ 
+$$ / $$ / $$ | $$$$$$$ |$$ |\$$$$$$\  $$ /  $$ |$$ |  $$ |
+$$ | $$ | $$ |$$  __$$ |$$ | \____$$\ $$ |  $$ |$$ |  $$ |
+$$ | $$ | $$ |\$$$$$$$ |$$ |$$$$$$$  |\$$$$$$  |$$ |  $$ |
+\__| \__| \__| \_______|\__|\_______/  \______/ \__|  \__|
+                </pre>
+            </div>
+
+            <div class="window active" style="max-width: 300px">
+                <div class="title-bar">
+                  <div class="title-bar-text">maison.py</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="window-body bod has-space">
+                    <div id="session">05f7c4b21af190d9a5edf0b7b09dc4c4ef61e2d871817ce95e134a0635c5c03315</div>
+                    <div class="pfp"><img src="imgs/pfp.jpg" width="100px" ></div>
+                  <p>extortersK (https://t.me/antiextort)</p>
+                  <div class="socials">
+                    <a target="_blank" href="https://doxbin.org/user/sys"><img id="social" src="imgs/db.png" width="30px" draggable="false"></a>
+                    <a target="_blank" href="https://t.me/antiextort"><img id="social" src="imgs/tg.png" width="30px" draggable="false"></a>
+                    <a id="copy-trigger" class="copy-link" onclick="copyToClipboard(); return false;">
+                        <img id="social" src="imgs/session.png" width="30px" draggable="false" alt="Social Icon">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    <script>
+        function copyToClipboard() {
+            const textElement = document.getElementById('session');
+            
+            if (textElement) {
+                const textArea = document.createElement('textarea');
+                textArea.value = textElement.textContent || textElement.innerText;
+                document.body.appendChild(textArea);
+                
+                textArea.select();
+                
+                document.execCommand('copy');
+                
+                document.body.removeChild(textArea);
+                
+                alert('Session ID copied to clipboard.');
+            } else {
+                alert('Element with id "session" not found.');
+            }
+        }
+    </script>
+
+    <audio autoplay src="tunes.mp3"></audio>
+</body>
+</html>
